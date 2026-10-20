@@ -218,7 +218,7 @@ details.rule summary{font-size:13px;color:var(--orange-ink)}
         <p class="hint">Ejemplo: se compromete con 1.000 kWh. Si falla por 50 kWh (5 %), no paga nada. Si falla por 100 kWh (10 %), paga 30 % del precio RD × 100 kWh. Durante los primeros 6 meses del programa (noviembre de 2026 a abril de 2027) no existe penalidad; desde mayo de 2027 se aplica.</p>
       </details>
     </div>
-    <p class="note">Se descuenta margen JULIA-RD del 10 % y GMF 4 × 1.000 (0,4 %) sobre el ingreso bruto, y la penalidad si hay desviación. Las horas y la reducción valen para todos los días en que participe.</p>
+    <p class="note">Se descuenta margen JULIA-RD del 8 % y GMF 4 × 1.000 (0,4 %) sobre el ingreso bruto, y la penalidad si hay desviación. Las horas y la reducción valen para todos los días en que participe.</p>
   </section>
 
   <div class="stack">
@@ -327,7 +327,7 @@ let DATA=PLANTS.Toc;const LBCD={"Toc":154956};let CUR='Toc';
 const PMAX={max:8000,step:2000};
 let LBCAVG=0;
 const DAYS=[['Lunes','Lunes'],['Martes','Martes'],['Miercoles','Miércoles'],['Jueves','Jueves'],['Viernes','Viernes'],['Sabado','Sábado'],['Domingo','Domingo']];
-const MARGIN=0.10, GMF=0.004, TOL=5, GRACE_END='2027-05'; // primeros 6 meses: nov. 2026 a abr. 2027
+const MARGIN=0.08, GMF=0.004, TOL=5, GRACE_END='2027-05'; // primeros 6 meses: nov. 2026 a abr. 2027
 /* Festivos Colombia 2026 y 2027 (calendarios oficiales con ley Emiliani) */
 const HOLS=new Set(['2026-11-02','2026-11-16','2026-12-08','2026-12-25',
  '2027-01-01','2027-01-11','2027-03-22','2027-03-25','2027-03-26','2027-05-01','2027-05-10','2027-05-31','2027-06-07','2027-07-05','2027-07-20','2027-08-07','2027-08-16','2027-10-18','2027-11-01','2027-11-15','2027-12-08','2027-12-25']);
